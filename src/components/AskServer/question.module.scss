@@ -1,0 +1,96 @@
+@import '../../styles/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=VT323&display=swap');
+
+
+
+.qaBtnContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding: 120px;
+
+  @media(max-width :900px ){
+    padding: 80px;
+  }
+
+  @media(max-width :800px ){
+    padding: 40px;
+  }
+
+  @media(max-width :730px ){
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  @media(max-width :500px ){
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+}
+
+
+.qaBtn {
+    font-family: 'VT323', monospace;
+
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  color: black;
+  border: 3px solid black;
+  border-top-color: $primery;
+  border-left-color: $primery;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 300px;
+
+  @media(max-width :710px ){
+    width: 200px;
+    font-size: 18px;
+  }
+
+  @media(max-width :710px ){
+    width: 180px;
+  }
+
+
+}
+
+.qaBtn:hover{
+    border: 3px solid $primery;
+    background-color: rgb(0, 0, 0);
+  color: $primery;
+
+
+}
+
+.qaBtn:after {
+  content: "";
+  background-color: $primery;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.qaBtn:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .qaBtn {
+    padding: 13px 50px 13px;
+  }
+}

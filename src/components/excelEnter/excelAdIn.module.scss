@@ -1,0 +1,93 @@
+@import '../../styles/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=VT323&display=swap');
+
+
+
+
+.container{
+    @include flex-center;
+    margin: 10rem auto 5rem auto;
+    width: 200px;
+    height: 50px;
+
+}
+
+
+.start{
+    cursor: pointer;
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid $primery ;
+    color: $primery;
+
+}
+
+.addExcel {
+    @include flex-center;
+    position: relative;
+    width: 200px;
+    height: 50px;
+    margin: 10rem auto 5rem auto;
+    overflow: hidden;
+    border: $border;
+    color: $primery;
+    transition: 0.5s;
+    border-radius: 8px;
+    cursor: pointer;
+
+  
+
+    &:hover {
+      box-shadow: rgb(176, 224, 230, 0.4) 0px 5px, rgb(176, 224, 230, 0.3) 0px 10px, rgb(176, 224, 230, 0.2) 0px 15px, rgb(176, 224, 230, 0.1) 0px 20px,  rgb(176, 224, 230, 0.025) 0px 25px;
+
+    }
+
+}
+ 
+
+ .fileLabel {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    outline: none;
+    font-weight: 900;
+    font-size: 18px;
+    letter-spacing: 1px;
+
+  }
+
+  .fileInput {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 80%;
+    height: 80%;
+    cursor: pointer;
+  }
+
+
+
+.excel {
+    content: "Let begin!";
+    outline: none;
+    position: absolute;
+    color: $primery;
+    text-align: center;
+    width: 100%;
+    font-family: 'VT323', monospace;
+    font-weight: 900;
+    font-size: 30px;
+    // margin-top: 2px;
+    overflow: hidden;
+
+}
+
+
+
+
+
+
+
+  
+  
+  

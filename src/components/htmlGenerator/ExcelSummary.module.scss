@@ -1,0 +1,45 @@
+@import '../../styles/variables.scss';
+
+.ExcelSummaryContainer{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    height: 300px;
+    max-height: 2600px;
+    overflow-y: auto;
+}
+
+
+.excelSummary {
+    border: $borderTable;
+    border-collapse:collapse;
+    padding:5px;
+}
+
+.excelSummaryDetalis {
+    height: 50px;
+    border: $borderTable;
+    border-collapse:collapse;
+    padding:5px;
+}
+
+
+.excelSummaryHeaderContainer{
+    text-align: left;
+
+}
+
+
+.excelSummaryHeader {
+    border: $borderTable;
+    padding:5px;
+    color: #313030;
+}
+.excelSummaryContet {
+    border: $borderTable;
+    text-align:left;
+    padding:5px;
+    background-color: $secondary;
+    color: #313030;
+
+}

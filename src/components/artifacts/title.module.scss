@@ -1,0 +1,11 @@
+@import '../../styles/variables.scss';
+
+.titleContainer{
+    @include flex-center;
+}
+
+
+.title{
+    @include title;
+    
+}

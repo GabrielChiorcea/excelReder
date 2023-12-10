@@ -1,0 +1,12 @@
+@import '../../styles/variables.scss';
+
+.btn{
+    height: 35px;
+    background: $secondary;
+    cursor: pointer;
+    margin: 6px 2px 0px 0px ;
+}
+
+.btn:hover{
+    transform: translateY(-5px);
+}

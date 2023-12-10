@@ -1,0 +1,120 @@
+@import '../../styles/variables.scss';
+
+.chartContainer{
+
+    @include flex-center-space-around ;
+    margin-top: 40px ;
+    border: 3px solid $primery;
+    padding: 10px;
+    border-radius: 15px;
+    
+}
+
+.tableConatiner{
+    border: $borderTable;
+    border-collapse:collapse;
+    padding:5px;
+    // margin-top: 30px;
+}
+
+.thead{
+    background: $secondary;
+    border: $borderTable;
+    padding:5px;
+
+
+}
+
+.tableContent{
+
+    border: $borderTable;
+    border-collapse:collapse;
+    padding:5px;
+    height: 30px;
+}
+
+.create{
+    @include flex-center-column;
+
+}
+
+.chartContainerBtn{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    background: $primery;
+    width: 130px;
+    height: 35px;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+
+.svgBtn{
+    fill: white;
+    transform: rotate(180deg);
+}
+.chartBtnStart{
+    background: transparent;
+    font-size: larger;
+    border: none;
+    cursor: pointer;
+}
+
+.option{
+
+    @include flex-center-row;
+}
+.optionContainer{
+    @include flex-center-column;
+
+}
+
+.imgContainer{
+    margin-top: 18px;
+    width: 800px;
+    height: 900px;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.select {
+    width: 200px; /* Lățimea selectului */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc; /* Bordură */
+    border-radius: 5px; /* Colțuri rotunjite */
+    background-color: #222; /* Culoarea de fundal */
+    color: #fff; /* Culoarea textului */
+    appearance: none; /* Ascunde aspectul implicit al selectului */
+  }
+  
+  /* Stilizarea pentru hover */
+  .select:hover {
+    background-color: #333; /* Culoarea de fundal la hover */
+  }
+  
+  /* Stilizarea pentru focus */
+  .select:focus {
+    outline: none; /* Elimină conturul de focus implicit */
+    border-color: #007BFF; /* Culoarea bordurii la focus */
+  }
+  
+  /* Stilizarea pentru option */
+  .option {
+    background-color: #222; /* Culoarea de fundal pentru opțiuni */
+    color: #fff; /* Culoarea textului pentru opțiuni */
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+  
+  /* Stilizarea pentru option la hover */
+  .option:hover {
+    background-color: #333; /* Culoarea de fundal la hover */
+  }
+  

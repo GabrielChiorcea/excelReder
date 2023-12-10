@@ -1,0 +1,43 @@
+@import '../../styles/variables.scss';
+
+.WelcomeContainer{
+
+    width: 100vw;
+    height: 40px;
+    background-color:$primery;
+    @include flex-center;
+    box-shadow: 2px -7px 38px 15px rgba(0,0,0,0.59);
+    
+}
+
+.textHolder{
+
+    height: auto;
+    width: auto;
+}
+
+
+.textAnimation {
+
+    font-size: 18px;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-right: .15em solid rgb(0, 0, 0); 
+    overflow: hidden;
+    white-space: nowrap; 
+    animation: typing 1s steps(40, end), blink-caret .75s step-end infinite;
+    animation-fill-mode: forwards;
+    
+  }
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width:100% ; }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: rgb(0, 0, 0); }
+  }
+  
+  

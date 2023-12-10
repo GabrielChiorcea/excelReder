@@ -1,0 +1,104 @@
+@import '../../styles/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=VT323&display=swap');
+
+.PowerContainer{
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 50px repeat(3, 1fr) 50px;
+    grid-template-rows: auto 1fr;
+    gap: 1rem;
+    color:$primery;
+
+
+        @media(max-width :1000px ){
+            grid-template-columns:  50px 1fr 50px ;
+            grid-template-rows:  repeat(4, 1fr);
+        }
+   
+}
+
+
+.header{
+    grid-column: 3;
+    grid-row: 1;
+    text-align: center;
+   
+    @include title;
+
+    @media(max-width :1000px ){
+        grid-column: 2;
+        grid-row: 1;
+        }
+
+
+     
+}
+.itemA{
+    grid-column: 2;
+    grid-row: 2;
+    border: $border;
+    padding: $pand;
+    box-shadow: rgb(176, 224, 230, 0.4) -5px 5px,  rgb(176, 224, 230, 0.3) -10px 10px,  rgb(176, 224, 230, 0.2) -15px 15px, rgb(176, 224, 230, 0.1) -20px 20px,  rgb(176, 224, 230, 0.025) -25px 25px;
+
+        @include Bigfont;
+        @include flex-center;
+
+        @media(max-width :1100px ){
+            @include Mediumfont
+            }
+    @media(max-width :1000px ){
+        grid-column: 2;
+        grid-row: 2;
+        box-shadow: $boxshadow;
+        }
+
+
+}
+
+.itemB{
+    grid-column: 3;
+    grid-row: 2;
+    border: $border;
+    padding: $pand;
+    box-shadow: rgb(176, 224, 230, 0.4) 0px 5px, rgb(176, 224, 230, 0.3) 0px 10px, rgb(176, 224, 230, 0.2) 0px 15px, rgb(176, 224, 230, 0.1) 0px 20px,  rgb(176, 224, 230, 0.025) 0px 25px;
+        @include Bigfont;
+        @include flex-center;
+        @media(max-width :1100px ){
+            @include Mediumfont
+            }
+    @media(max-width : 1000px ){
+        grid-column: 2;
+        grid-row: 3;
+        box-shadow: $boxshadow;
+
+        }
+
+        
+}
+
+.itemC {
+    grid-column: 4;
+    grid-row: 2;
+    border: $border;
+    padding: $pand;
+    box-shadow: rgb(176, 224, 230, 0.4) 5px 5px, rgb(176, 224, 230, 0.3) 10px 10px, rgb(176, 224, 230, 0.2) 15px 15px,rgb(176, 224, 230, 0.1) 20px 20px, rgb(176, 224, 230, 0.025) 25px 25px;
+
+        @include Bigfont;
+        @include flex-center;
+
+        @media(max-width :1100px ){
+            @include Mediumfont
+            }
+    @media(max-width :1000px ){
+        grid-column: 2;
+        grid-row: 4;
+        box-shadow: $boxshadow;
+
+    }
+
+    
+}
+
+
+
+

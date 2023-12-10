@@ -1,0 +1,115 @@
+@import '../../styles/variables.scss';
+
+
+.responseContainer{
+    width: 100vh;
+    height: 300px;
+    border: $border;
+    background-color: azure;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.responseContainerChart{
+  
+    width: 100vh;
+    height: 600px;
+    border: $border;
+    background-color: azure;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+
+.response{
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: $primery; 
+
+}
+
+.tableContainer{
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+  max-height: 1200px;
+  overflow-y: auto;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.tableContent{
+  display: flex;
+  flex-direction: column;
+  color: rgb(0, 0, 0);
+}
+
+.column{
+  padding-left: 5px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: $secondary;
+
+}
+
+.cell{
+  padding-left: 5px;
+  width: 200px;
+  height: 50px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: $secondary;
+}
+
+.errorContainer{
+  @include flex-center-column;
+}
+.errorMessage{
+  border-radius: 20px;
+  background-color: #fce4e4;
+  border: 1px solid #fcc2c3;
+  padding: 20px 30px;
+  text-align: center;
+
+}
+
+.errorText{
+  color: #cc0033;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-shadow: 5px 5px rgba(250,250,250,.3);
+
+}
+
+.defaultMessage{
+  height: 100%;
+  border-radius: 20px;
+  padding: 20px 30px;
+  text-align: center;
+}
+
+
+.defaultText{
+  @include Bigfont;
+  color: $black;
+}
+
+.recall{
+  @include Mediumfont;
+  margin-top: 15px;
+  color: $black;
+}
+
+
+
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 40%; }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: rgb(0, 0, 0); }
+  }
