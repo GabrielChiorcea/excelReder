@@ -4,14 +4,6 @@ This frontend serves two primary and critical functions: processing an Excel fil
 
 This project is built using React for the user interface, Sass for styling, and Redux for state management.
 
-<div class="image columns-1 sm:columns-2 gap-8">
-
-![CocaCola 01.](/images/project/02-01.jpg)
-![CocaCola 02.](/images/project/02-02.jpg)
-![CocaCola 01.](/images/project/02-03.jpg)
-![CocaCola 02.](/images/project/02-04.jpg)
-</div>
-
 
 ## Send the Excel
 
